@@ -1,0 +1,31 @@
+<!-- head -->
+<%- include('partials/header') %>
+
+  <body>
+    <!-- Sidebar -->
+    <%- include('partials/sidebar') %>
+
+      <!-- Content -->
+      <div class="content">
+        <% if (messages.success) { %>
+          <div class="flash success">
+            <%= messages.success %>
+          </div>
+          <% } %>
+            <% if (messages.error) { %>
+              <div class="flash error">
+                <%= messages.error %>
+              </div>
+              <% } %>
+                <h2>Add new Restaurant</h2>
+                <div class="table-container">
+                  <form action="" method="POST" id="add_restaurant">
+                    <input type="text" name="name" id="restaurant_name">
+
+                    <input type="submit" name="save" value="Save">
+                  </form>
+                </div>
+      </div>
+  </body>
+
+  </html>

@@ -1,0 +1,58 @@
+<!-- head -->
+<%- include('partials/header') %>
+
+  <body>
+    <!-- Sidebar -->
+    <%- include('partials/sidebar') %>
+
+      <!-- Content -->
+      <div class="content">
+        <h2>Restaurants</h2>
+        <a href="/admin/restaurants/new">
+          <button class="green-button">Add New Restaurant</button>
+        </a>
+        <div class="table-container">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Ratings</th>
+                <th>QR Images</th>
+                <th>Add Waiter</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% restaurants.forEach((restaurant, index)=> { %>
+                <tr>
+                  <td>
+                    <%= index + 1 %>
+                  </td> <!-- Displaying index + 1 as the ID -->
+                  <td>
+                    <%= restaurant.name %>
+                  </td>
+                  <td>
+                    <%= restaurant.ratings.length %>
+                  </td>
+                  <td>
+                    <% if (restaurant.qrCode) { %>
+                      <img src="/images/qrcodes/<%= restaurant.qrCode %>" alt="">
+                      <% } %>
+                  </td>
+                  <td>
+                    <a href="/admin/restaurants/<%= restaurant._id %>/waiters/new" class="btn-add-waiter">Add Waiter</a>
+                  </td>
+                  <td>
+                    <a onclick="return confirm('Are you sure?');" href="/admin/restaurants/<%= restaurant._id %>/delete"
+                      class="btn-delete">Delete</a>
+                  </td>
+                </tr>
+                <% }) %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  </body>
+
+  </html>

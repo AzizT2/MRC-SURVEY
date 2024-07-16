@@ -1,0 +1,139 @@
+<!-- head -->
+<%- include('partials/header') %>
+  <style>
+    /* Inline styles for demonstration; consider moving to external CSS */
+    .card {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      margin-bottom: 20px;
+      /* Added margin at the bottom for spacing */
+    }
+
+    .restaurant-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .ratings {
+      font-size: 18px;
+      color: #666666;
+    }
+
+    .svg-container {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .svg-container img {
+      width: 50px;
+    }
+
+    .svg-container img:hover {
+      cursor: pointer;
+    }
+
+    .waiter-card {
+      max-width: 400px;
+      margin: 10px auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      text-align: center;
+      flex: 1 1 auto;
+    }
+
+    .waiter-picture {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .restaurant-container {
+      margin-top: 100px;
+    }
+
+    .waiters-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  </style>
+
+  <body>
+    <!-- Navbar -->
+    <%- include('partials/navbar') %>
+      <div class="restaurant-container">
+        <div class="card">
+          <h1 class="restaurant-name">
+            <%= restaurant.name %>
+          </h1>
+          <p class="ratings"><strong>Ratings:</strong>
+            <%= averageRating %>
+          </p>
+          <div class="svg-container">
+
+            <a href="/restaurant/<%= restaurant._id %>/rate/95">
+              <img src="/svg/smiley-icon.svg" alt="Smiley" class="svg-icon">
+            </a>
+
+            <a href="/restaurant/<%= restaurant._id %>/rate/75">
+              <img src="/svg/okay.svg" alt="Okay" class="svg-icon">
+            </a>
+            <a href="/restaurant/<%= restaurant._id %>/rate/55">
+              <img src="/svg/sad.svg" alt="Sad" class="svg-icon">
+            </a>
+            <a href="/restaurant/<%= restaurant._id %>/rate/35">
+              <img src="/svg/angry.svg" alt="Angry" class="svg-icon">
+            </a>
+
+
+
+          </div>
+        </div>
+
+        <div class="waiters-container">
+          <% waiters.forEach(waiter=> { %>
+            <div class="waiter-card">
+              <img src="/uploads/waiters/<%= waiter.picture %>" alt="<%= waiter.name %>" class="waiter-picture">
+              <h2>
+                <%= waiter.name %>
+              </h2>
+              <p><strong>Ratings:</strong>
+                <%= waiter.average_rating %>
+              </p>
+              <div class="svg-container">
+
+                <a href="/waiter/<%= waiter._id %>/rate/95/restaurant/<%= restaurant._id %>">
+                  <img src="/svg/smiley-icon.svg" alt="Smiley" class="svg-icon">
+                </a>
+
+                <a href="/waiter/<%= waiter._id %>/rate/75/restaurant/<%= restaurant._id %>">
+                  <img src="/svg/okay.svg" alt="Okay" class="svg-icon">
+                </a>
+                <a href="/waiter/<%= waiter._id %>/rate/55/restaurant/<%= restaurant._id %>">
+                  <img src="/svg/sad.svg" alt="Sad" class="svg-icon">
+                </a>
+                <a href="/waiter/<%= waiter._id %>/rate/35/restaurant/<%= restaurant._id %>">
+                  <img src="/svg/angry.svg" alt="Angry" class="svg-icon">
+                </a>
+
+
+
+              </div>
+            </div>
+            <% }); %>
+        </div>
+      </div>
+  </body>
+
+  </html>

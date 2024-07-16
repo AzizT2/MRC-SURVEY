@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="/css/styles.css"> <!-- Replace with your CSS file -->
+  <style>
+    /* Basic styles for demonstration */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      height: inherit;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #555;
+      padding-bottom: 10px;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .sidebar ul li a:hover {
+      text-decoration: none;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .table th,
+    .table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .table th {
+      background-color: #f2f2f2;
+    }
+
+    a,
+    a:hover {
+      text-decoration: none;
+    }
+
+    .green-button {
+      background-color: #28a745;
+      /* Green background color */
+      color: white;
+      /* White text color */
+      border: none;
+      /* Remove border */
+      padding: 15px 30px;
+      /* Add padding */
+      font-size: 16px;
+      /* Font size */
+      font-weight: bold;
+      /* Bold text */
+      border-radius: 5px;
+      /* Rounded corners */
+      cursor: pointer;
+      /* Pointer cursor on hover */
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      /* Smooth transitions */
+    }
+
+    .green-button:hover {
+      background-color: #218838;
+      /* Darker green on hover */
+      transform: scale(1.05);
+      /* Slightly enlarge button on hover */
+    }
+
+    .green-button:active {
+      background-color: #1e7e34;
+      /* Even darker green on click */
+      transform: scale(1);
+      /* Reset scale on click */
+    }
+
+    .green-button:focus {
+      outline: none;
+      /* Remove default focus outline */
+      box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.4);
+      /* Custom focus outline */
+    }
+
+    form#add_restaurant {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 300px;
+    }
+
+    input#restaurant_name {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    form#add_restaurant input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    form#add_restaurant input[type="submit"]:hover {
+      background-color: #218838;
+    }
+
+    form#add_restaurant input[type="submit"]:active {
+      background-color: #1e7e34;
+    }
+
+    .flash {
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .flash.success {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .flash.error {
+      background-color: #f44336;
+      color: white;
+    }
+
+    #add_waiter_form {
+      max-width: 300px;
+      /* Center align the form */
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    /* Styling for form elements */
+    #add_waiter_form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    #add_waiter_form input[type="text"],
+    #add_waiter_form input[type="password"],
+    #add_waiter_form input[type="email"],
+    #add_waiter_form textarea {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    #add_waiter_form button[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #add_waiter_form button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    #add_waiter_form .form-group {
+      margin-bottom: 20px;
+    }
+
+    #add_waiter_form .form-group:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+</head>

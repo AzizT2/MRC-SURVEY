@@ -1,0 +1,94 @@
+[
+  {
+    "_id": "66923da2779c9ad3cb53e048",
+    "name": "The Bistro Vine",
+    "ratings": [
+      {
+        "rating": 95,
+        "rating_by": "66918964861d017a1acd3509",
+        "date_time": "2024-07-13T12:02:13.125Z",
+        "_id": "66926cc51cfd88a4f480c0d2"
+      },
+      {
+        "rating": 55,
+        "rating_by": "66926d101cfd88a4f480c103",
+        "date_time": "2024-07-13T12:03:38.771Z",
+        "_id": "66926d1a1cfd88a4f480c112"
+      },
+      {
+        "rating": 75,
+        "rating_by": "66926ddccd57f87da9dc15a6",
+        "date_time": "2024-07-13T12:07:01.140Z",
+        "_id": "66926de5cd57f87da9dc15ba"
+      },
+      {
+        "rating": 35,
+        "rating_by": "66926e0acd57f87da9dc15c7",
+        "date_time": "2024-07-13T12:07:48.308Z",
+        "_id": "66926e14cd57f87da9dc15e0"
+      }
+    ],
+    "__v": 4
+  },
+  {
+    "_id": "66923da7779c9ad3cb53e04b",
+    "name": "Savory Seasons",
+    "ratings": [
+      {
+        "rating": 55,
+        "rating_by": "66926d101cfd88a4f480c103",
+        "date_time": "2024-07-13T12:26:42.565Z",
+        "_id": "669272829a5686e8d733d0b1"
+      }
+    ],
+    "__v": 1
+  },
+  {
+    "_id": "66923db0779c9ad3cb53e04e",
+    "name": "Harborview Grill",
+    "ratings": [],
+    "__v": 0
+  },
+  {
+    "_id": "66923db5779c9ad3cb53e051",
+    "name": "Urban Spice Kitchen",
+    "ratings": [],
+    "__v": 0
+  },
+  {
+    "_id": "66923dba779c9ad3cb53e054",
+    "name": "Mesa Verde",
+    "ratings": [],
+    "__v": 0
+  },
+  {
+    "_id": "66923dbf779c9ad3cb53e057",
+    "name": "Café Serenade",
+    "ratings": [],
+    "__v": 0
+  },
+  {
+    "_id": "66923dc4779c9ad3cb53e05a",
+    "name": "Piazza Bella",
+    "ratings": [],
+    "__v": 0
+  },
+  {
+    "_id": "66923dc8779c9ad3cb53e05d",
+    "name": "Fusion Flavors",
+    "ratings": [],
+    "__v": 0
+  },
+  {
+    "_id": "66923dd0779c9ad3cb53e060",
+    "name": "Pacific Plate",
+    "ratings": [],
+    "__v": 0
+  },
+  {
+    "_id": "66923dd5779c9ad3cb53e063",
+    "name": "Majestic Oaks Restaurant",
+    "ratings": [],
+    "__v": 0
+  }
+]

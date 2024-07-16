@@ -1,0 +1,28 @@
+<!-- head -->
+<%- include('partials/header') %>
+
+
+  <body>
+    <!-- Navbar -->
+    <%- include('partials/navbar') %>
+      <!-- Content -->
+      <!-- home.ejs -->
+      <div class="container margin-top">
+        <div class="card">
+          <h1 style="text-align: center;">All Restaurants</h1>
+          <ul>
+            <% restaurants.forEach(restaurant=> { %>
+              <li>
+                <a href="/restaurants/<%= restaurant._id %>">
+                  <%= restaurant.name %>
+                </a>
+              </li>
+              <% }); %>
+          </ul>
+        </div>
+      </div>
+
+      <script src="/js/script.js"></script>
+  </body>
+
+  </html>

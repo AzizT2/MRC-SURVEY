@@ -1,0 +1,170 @@
+[
+  {
+    "_id": "66923f43779c9ad3cb53e078",
+    "restaurant_id": "66923da2779c9ad3cb53e048",
+    "name": "Ryan Adams",
+    "picture": "1720860483215.jpg",
+    "ratings": [
+      {
+        "rating": 35,
+        "rating_by": "66918964861d017a1acd3509",
+        "date_time": "2024-07-13T12:17:31.750Z",
+        "_id": "66926fadb966d886af006f6b"
+      },
+      {
+        "rating": 75,
+        "rating_by": "66926d101cfd88a4f480c103",
+        "date_time": "2024-07-13T12:20:30.248Z",
+        "_id": "6692710bdfc5c27110862c45"
+      },
+      {
+        "rating": 95,
+        "rating_by": "66926e0acd57f87da9dc15c7",
+        "date_time": "2024-07-13T12:22:54.983Z",
+        "_id": "6692719e04517d122241c72e"
+      }
+    ],
+    "__v": 3
+  },
+  {
+    "_id": "66923f4d779c9ad3cb53e07b",
+    "restaurant_id": "66923da2779c9ad3cb53e048",
+    "name": "Benjamin Foster",
+    "picture": "1720860493693.jpg",
+    "ratings": [],
+    "__v": 0
+  },
+  {
+    "_id": "66923f5b779c9ad3cb53e07e",
+    "restaurant_id": "66923da2779c9ad3cb53e048",
+    "name": "Nathan Brooks",
+    "picture": "1720860507082.jpg",
+    "ratings": [],
+    "__v": 0
+  },
+  {
+    "_id": "66923f7d779c9ad3cb53e08b",
+    "restaurant_id": "66923da7779c9ad3cb53e04b",
+    "name": "Daniel Hughes",
+    "picture": "1720860541926.jpg",
+    "ratings": [
+      {
+        "rating": 55,
+        "rating_by": "66926d101cfd88a4f480c103",
+        "date_time": "2024-07-13T12:26:45.094Z",
+        "_id": "669272859a5686e8d733d0ba"
+      }
+    ],
+    "__v": 1
+  },
+  {
+    "_id": "66923f85779c9ad3cb53e08e",
+    "restaurant_id": "66923da7779c9ad3cb53e04b",
+    "name": "Luke Mitchell",
+    "picture": "1720860549785.jpg",
+    "ratings": [
+      {
+        "rating": 35,
+        "rating_by": "66926d101cfd88a4f480c103",
+        "date_time": "2024-07-13T12:26:46.709Z",
+        "_id": "669272869a5686e8d733d0c5"
+      }
+    ],
+    "__v": 1
+  },
+  {
+    "_id": "66923f8f779c9ad3cb53e091",
+    "restaurant_id": "66923da7779c9ad3cb53e04b",
+    "name": "Jake Carter",
+    "picture": "1720860559667.jpg",
+    "ratings": [
+      {
+        "rating": 95,
+        "rating_by": "66926d101cfd88a4f480c103",
+        "date_time": "2024-07-13T12:26:47.995Z",
+        "_id": "669272879a5686e8d733d0d2"
+      }
+    ],
+    "__v": 1
+  },
+  {
+    "_id": "66923fe5779c9ad3cb53e0aa",
+    "restaurant_id": "66923db0779c9ad3cb53e04e",
+    "name": "Brandon Ellis",
+    "picture": "1720860645759.jpg",
+    "ratings": [],
+    "__v": 0
+  },
+  {
+    "_id": "66923fed779c9ad3cb53e0ad",
+    "restaurant_id": "66923db0779c9ad3cb53e04e",
+    "name": "Kyle Reynolds",
+    "picture": "1720860653467.jpg",
+    "ratings": [],
+    "__v": 0
+  },
+  {
+    "_id": "66923ff6779c9ad3cb53e0b0",
+    "restaurant_id": "66923db0779c9ad3cb53e04e",
+    "name": "Tyler Baker",
+    "picture": "1720860662754.jpg",
+    "ratings": [],
+    "__v": 0
+  },
+  {
+    "_id": "6692400c779c9ad3cb53e0b9",
+    "restaurant_id": "66923db5779c9ad3cb53e051",
+    "name": "Connor Marshall",
+    "picture": "1720860684181.jpg",
+    "ratings": [],
+    "__v": 0
+  },
+  {
+    "_id": "6692401e779c9ad3cb53e0bc",
+    "restaurant_id": "66923db5779c9ad3cb53e051",
+    "name": "Mason Porter",
+    "picture": "1720860702615.jpg",
+    "ratings": [],
+    "__v": 0
+  },
+  {
+    "_id": "66924031779c9ad3cb53e0c5",
+    "restaurant_id": "66923dba779c9ad3cb53e054",
+    "name": "Owen Foster",
+    "picture": "1720860721547.jpg",
+    "ratings": [],
+    "__v": 0
+  },
+  {
+    "_id": "6692403b779c9ad3cb53e0c8",
+    "restaurant_id": "66923dba779c9ad3cb53e054",
+    "name": "Isaac Gray",
+    "picture": "1720860731153.jpg",
+    "ratings": [],
+    "__v": 0
+  },
+  {
+    "_id": "6692404f779c9ad3cb53e0d1",
+    "restaurant_id": "66923dba779c9ad3cb53e054",
+    "name": "Caleb Turner",
+    "picture": "1720860751098.jpg",
+    "ratings": [],
+    "__v": 0
+  },
+  {
+    "_id": "6692405a779c9ad3cb53e0d6",
+    "restaurant_id": "66923dbf779c9ad3cb53e057",
+    "name": "Logan Bennett",
+    "picture": "1720860762751.jpg",
+    "ratings": [],
+    "__v": 0
+  },
+  {
+    "_id": "66924061779c9ad3cb53e0d9",
+    "restaurant_id": "66923dbf779c9ad3cb53e057",
+    "name": "Gavin Walsh",
+    "picture": "1720860769991.jpg",
+    "ratings": [],
+    "__v": 0
+  }
+]

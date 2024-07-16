@@ -1,0 +1,37 @@
+<!-- head -->
+<%- include('partials/header') %>
+
+  <body>
+    <!-- Sidebar -->
+    <%- include('partials/sidebar') %>
+
+      <!-- Content -->
+      <div class="content">
+        <% if (messages.success) { %>
+          <div class="flash success">
+            <%= messages.success %>
+          </div>
+          <% } %>
+            <h2>Add Waiter</h2>
+            <div class="table-container">
+              <!-- Waiter Form -->
+              <form action="/admin/waiters/save" method="POST" id="add_waiter_form" enctype="multipart/form-data">
+                <div class="form-group">
+                  <label for="name">Waiter Name:</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="picture">Waiter Picture:</label>
+                  <input type="file" id="picture" name="picture" accept="image/*" required>
+                </div>
+                <!-- Hidden field to store restaurant ID -->
+                <input type="hidden" name="restaurant_id" value="<%= restaurantId %>">
+
+                <button type="submit">Add Waiter</button>
+              </form>
+              <!-- End Waiter Form -->
+            </div>
+      </div>
+  </body>
+
+  </html>

@@ -1,0 +1,23 @@
+<nav class="navbar">
+  <div class="container">
+    <a href="/">
+      <img src="/images/logo.png" class="img_logo" alt="">
+    </a>
+    <button class="toggle-button" id="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <div class="navbar-links" id="navbar-links">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <% if (user) { %>
+          <li><a href="/logout">Logout</a></li>
+          <% } else { %>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+            <% } %>
+      </ul>
+    </div>
+  </div>
+</nav>

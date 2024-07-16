@@ -1,0 +1,37 @@
+[
+  {
+    "_id": "66918964861d017a1acd3509",
+    "username": "qaisar",
+    "password": "$2b$10$vn2oJAPUFDCvhyH.VBHqNO4g8s7dmgunbZzfgRQd9M/sZTKXEJCyC",
+    "role": "normal",
+    "__v": 0
+  },
+  {
+    "_id": "66918a847e1734bf878fc4da",
+    "username": "admin",
+    "password": "$2b$10$80XV9yS2rkrKfSFqnyFWQuiIB7lME6PZNHAwYZ6EylyT8m.7/mRbm",
+    "role": "admin",
+    "__v": 0
+  },
+  {
+    "_id": "66926d101cfd88a4f480c103",
+    "username": "bilal",
+    "password": "$2b$10$6/sjLGSbCpXPISqMfDmRFOqrZ5nlzSMhckJQkkumEbPXtnPCkZU6W",
+    "role": "normal",
+    "__v": 0
+  },
+  {
+    "_id": "66926ddccd57f87da9dc15a6",
+    "username": "ali",
+    "password": "$2b$10$lUYI8pu5Msh2tCFKcYKcT.T4HaOB2tX.EA2BiOPlaLTBKak.IMqi2",
+    "role": "normal",
+    "__v": 0
+  },
+  {
+    "_id": "66926e0acd57f87da9dc15c7",
+    "username": "kashif",
+    "password": "$2b$10$1saKLZg9/NqPey6vq1IjMeWmLz6INuw89fyb0x/WcdEnVguKYYPlm",
+    "role": "normal",
+    "__v": 0
+  }
+]
